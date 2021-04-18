@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-    
-   <script>
- function salamla(a){
-     console.log(a);
- }
-    
- 
- setTimeout( function() {
-     salamla("Qasim");
- }, 1000);
- setTimeout( function() {
-     salamla("Memmedli");
- }, 2000);
- setTimeout( function() {
-     salamla("Yas 29");
- }, 3000);
 
 
-   </script>
+    <script>
+        // async function salamla(text, timeout) {
+        //     return new Promise((resolve , reject) => {
+        //         setTimeout(() => {
+        //             console.log(text);
+        //             resolve()
+
+        //         }, timeout);
+
+        //     });
+
+        // }
+        // (async function() {
+
+        //     salamla("qasim", 2000);
+        //     salamla("memmedli", 1000);
+        //     salamla("Yas 29", 1000);
+        // })();
+        var reqemler= [2,3,4,5,6];
+
+        function toplama (reqemler) {
+                var cem = 0;
+            for (let index = 0; index < reqemler.length; index++) {
+                  
+                    cem=cem+reqemler[index];
+
+                
+            }
+            console.log(cem)
+            return cem;
+            
+        } 
+        toplama(reqemler);
+        
+        
+
+
+    </script>
 </body>
+
 </html>
